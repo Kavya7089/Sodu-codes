@@ -1,0 +1,963 @@
+PSEUDOCODE
+
+QUES:-
+WRITE A PSEUDOCODE TO FIND SQUARE AND CUBE OF A NUMBER
+
+Pseudocode:-
+DECLARE num=INTEGER
+READ num
+PRINT num*num
+PRINT num*num*num
+
+Program:-
+import java.util.Scanner;
+public class NumberPowers {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter an integer: ");
+        if (input.hasNextInt()) {
+            int num = input.nextInt();
+            System.out.println("Square: " + (num * num));
+            System.out.println("Cube: " + (num * num * num));
+        } else {
+            System.out.println("Error: Please enter a valid integer.");
+        }
+        input.close();
+    }
+}
+
+QUES:-
+INCREMENT
+
+Pseudocode:-
+DECLARE X:INTEGER
+X:=5 // SET X:=5 // INIT X:=5
+INCREMENT X
+PRINT X
+
+Program:-
+public class IncrementExample {
+    public static void main(String[] args) {
+        int x = 5;
+        x++; 
+        System.out.println(x);
+    }
+}
+
+QUES:-
+TO FIND THE AREA AND CIRCUMFERENCE OF A CIRCLE
+
+Pseudocode:-
+DECLARE radius : REAL
+DECLARE area : REAL
+DECLARE circum : REAL
+CONSTANT PI = 3.14
+READ radius
+area:=PI*radius*radius
+circum:=2*PI*radius
+PRINT area
+PRINT circum
+
+Program:-
+import java.util.Scanner;
+public class CircleCalculator {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        final double PI = 3.14; 
+        double radius, area, circum;
+        System.out.print("Enter the radius: ");
+        if (input.hasNextDouble()) {
+            radius = input.nextDouble();
+            area = PI * radius * radius;
+            circum = 2 * PI * radius;
+            System.out.println("Area: " + area);
+            System.out.println("Circumference: " + circum);
+        } else {
+            System.out.println("Invalid input. Please enter a number.");
+        }
+        input.close();
+    }
+}
+
+QUES:-
+INTEGER x=9 , y=2 , z=6;
+INTEGER a
+a=x&y/z
+PRINT a
+
+Pseudocode:-
+DECLARE x, y, z, a AS INTEGER
+    INITIALIZE x := 9, y := 2, z := 6
+    a := x AND (y / z)
+    PRINT a
+END
+
+Program:-
+public class OperatorPrecedence {
+    public static void main(String[] args) {
+        int x = 9;
+        int y = 2;
+        int z = 6;
+        int a;
+        a = x & y / z;
+        System.out.println("The value of a is: " + a);
+    }
+}
+
+
+SELECTION IF
+
+QUES:-
+1) SIMPLE IF:-
+
+Pseudocode:-
+DECLARE X : INTEGER
+READ X
+IF X>=5 THEN
+PRINT " X is greater than or equal to 5"
+END IF
+
+Program:-
+import java.util.Scanner;
+public class ConditionalCheck {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a value for X: ");
+        if (input.hasNextInt()) {
+            int x = input.nextInt();
+            if (x >= 5) {
+                System.out.println("X is greater than or equal to 5");
+            }
+        } else {
+            System.out.println("Please enter a valid integer.");
+        }
+        input.close();
+    }
+}
+
+QUES:-
+EVEN/ODD
+
+Pseudocode:-
+DECLARE num : INTEGER
+READ num
+IF num MOD 2==0 Then
+PRINT"EVEN"
+ELSE
+PRINT"ODD"
+END IF
+
+Program:-
+import java.util.Scanner;
+
+public class EvenOddChecker {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);    
+        System.out.print("Enter a number: ");
+        if (input.hasNextInt()) {
+            int num = input.nextInt();
+            if (num % 2 == 0) {
+                System.out.println("EVEN");
+            } 
+            else {
+                System.out.println("ODD");
+            }
+        } else {
+            System.out.println("Error: Please enter a whole number.");
+        }
+        input.close();
+    }
+}
+
+QUES:-
+GREATEST OF TWO
+
+Pseudocode:-
+DECLARE num1 : INTEGER
+DECLARE num2 : INTEGER
+READ num1,num2
+IF num1>num2 then
+PRINT "num1 is greater"
+ELSE
+PRINT "num2 is greater"
+END IF
+
+Program:-
+import java.util.Scanner;
+public class CompareNumbers {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int num1, num2;       
+        System.out.print("Enter first number: ");
+        num1 = input.nextInt();     
+        System.out.print("Enter second number: ");
+        num2 = input.nextInt();
+        if (num1 > num2) {
+            System.out.println("num1 is greater");
+        } 
+        else {
+            System.out.println("num2 is greater");
+        }    
+        input.close();
+    }
+}
+
+QUES:-
+2) IF ELSE
+
+Pseudocode:-
+DECLARE X : INTEGER
+READ X 
+IF X>=5 then
+PRINT " X is greater or equal to 5"
+ELSE
+PRINT"X is less then 5"
+END IF
+
+Program:-
+import java.util.Scanner;
+public class ComparisonTest {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);       
+        System.out.print("Enter a value for X: ");
+        if (input.hasNextInt()) {
+            int x = input.nextInt();
+            if (x >= 5) {
+                System.out.println("X is greater or equal to 5");
+            } 
+            else {
+                System.out.println("X is less than 5");
+            }
+        } else {
+            System.out.println("Please enter a valid integer.");
+        }       
+        input.close();
+    }
+}
+
+QUES:-
+POSITIVE/NEGATIVE
+
+Pseudocode:-
+DECLARE num : INTEGER
+READ num
+IF num >=0 then
+PRINT "POSITIVE"
+ELSE
+PRINT "NEGATIVE"
+END IF
+
+Program:-
+import java.util.Scanner;
+public class SignChecker {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter an integer: ");
+        if (input.hasNextInt()) {
+            int num = input.nextInt();
+            if (num >= 0) {
+                System.out.println("POSITIVE");
+            } 
+            else {
+                System.out.println("NEGATIVE");
+            }
+        } else {
+            System.out.println("Error: Please enter a valid whole number.");
+        }       
+        input.close();
+    }
+}
+
+
+QUES:-
+IF ELSE IF LADDER
+
+Pseudocode:-
+DECLARE CN : INTEGER
+DECLARE CD : INTEGER
+DECLARE PM : INTEGER
+DECLARE DBMS : INTEGER
+DECLARE ML : INTEGER
+READ CN, CD, PM, DBMS, ML
+DECLARE per : REAL
+per := (CN+CD+PM+DBMS+ML)/5
+IF per >= 90 then
+PRINT "A+"
+ELSE IF per >= 80 then
+PRINT "A"
+ELSE IF per >= 70 then
+PRINT "B+"
+ELSE IF per >= 60 then
+PRINT "B"
+ELSE IF per >= 50 then
+PRINT "C"
+ELSE IF per >= 40 then
+PRINT "D"
+ELSE PRINT "F"
+END IF
+
+Program:-
+import java.util.Scanner;
+public class GradeCalculator {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int cn, cd, pm, dbms, ml;       
+        System.out.println("Enter marks for 5 subjects:");
+        cn = input.nextInt();
+        cd = input.nextInt();
+        pm = input.nextInt();
+        dbms = input.nextInt();
+        ml = input.nextInt();
+        double per = (cn + cd + pm + dbms + ml) / 5.0;     
+        System.out.println("Percentage: " + per + "%");
+        if (per >= 90) {
+            System.out.println("A+");
+        } else if (per >= 80) {
+            System.out.println("A");
+        } else if (per >= 70) {
+            System.out.println("B+");
+        } else if (per >= 60) {
+            System.out.println("B");
+        } else if (per >= 50) {
+            System.out.println("C");
+        } else if (per >= 40) {
+            System.out.println("D");
+        } else {
+            System.out.println("F");
+        }       
+        input.close();
+    }
+}
+
+QUES:-
+FIRST, SECOND, THIRD.FOURTH,ORIGIN
+
+Pseudocode:-
+DECLARE x: INTEGER
+DECLARE y: INTEGER
+READ x,y
+IF x>0 AND y>0 THEN
+PRINT "FIRST"
+ELSE IF x<0 AND y>0 THEN
+PRINT "SECOND"
+ELSE IF x<0 AND y<0 THEN
+PRINT "THIRD"
+ELSE IF x>0 AND y<0 THEN
+PRINT "FOURTH"
+ELSE 
+PRINT "ORIGIN"
+END IF
+
+Program:-
+import java.util.Scanner;
+public class QuadrantFinder {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int x, y;       
+        System.out.println("Enter coordinates (x and y):");
+        x = input.nextInt();
+        y = input.nextInt();
+        if (x > 0 && y > 0) {
+            System.out.println("FIRST");
+        } 
+        else if (x < 0 && y > 0) {
+            System.out.println("SECOND");
+        } 
+        else if (x < 0 && y < 0) {
+            System.out.println("THIRD");
+        } 
+        else if (x > 0 && y < 0) {
+            System.out.println("FOURTH");
+        } 
+        else {
+            System.out.println("ORIGIN or AXIS");
+        }        
+        input.close();
+    }
+}
+
+QUES:-
+NESTED-IF
+
+U.ID AND PASS
+
+Pseudocode:-
+DECLARE U.ID : STRING
+DECLARE PASS : STRING
+READ U.ID
+READ PASS
+IF U.ID=="TIT" THEN
+IF PASS =="TIT" THEN
+PRINT "WELCOME"
+ELSE 
+PRINT "INVALID PASSWORD"
+END IF
+ELSE 
+PRINT "INVALID U.ID"
+END IF
+
+Program:-
+import java.util.Scanner;
+public class LoginSystem {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String userID, password;      
+        System.out.print("Enter User ID: ");
+        userID = input.next();
+        if (userID.equals("TIT")) {           
+            System.out.print("Enter Password: ");
+            password = input.next();
+            if (password.equals("TIT")) {
+                System.out.println("WELCOME");
+            } else {
+                System.out.println("INVALID PASSWORD");
+            }     
+        } else {
+            System.out.println("INVALID USER ID");
+        }  
+        input.close();
+    }
+}
+
+CASE
+
+LOOP/ITERATION
+
+1)REPEAT-UNTIL
+
+Pseudocode:-
+DECLATRE i : INTEGER
+SET i :=1
+REPEAT PRINT i
+INCREMENT i
+UNTIL i<=10
+
+Program:-
+public class Main {
+    public static void main(String[] args) {
+        int i = 1; 
+        do {
+            System.out.println(i); 
+            i++;                  
+        } while (i <= 10);       
+    }
+}
+
+Pseudocode:-
+DECLATRE i : INTEGER
+SET i :=10
+REPEAT PRINT i
+DECREMENT i
+UNTIL i>=0
+
+Program:-
+public class Countdown {
+    public static void main(String[] args) {
+        int i = 10;
+        do {
+            System.out.println(i);
+            i--; 
+        } while (i >= 0); 
+    }
+}
+
+Pseudocode:-
+DECLATRE i : INTEGER
+SET i :=1
+DO PRINT i
+INCREMENT i
+WHILE i<=10
+
+Program:-
+public class LoopExample {
+    public static void main(String[] args) {
+        int i = 1;
+        do {
+            System.out.println(i); 
+            i++;                   
+        } while (i <= 10);      
+    }
+}
+
+2)WHILE
+
+Pseudocode:-
+DECLARE i : INTEGER
+DECLARE num : INTEGER
+SET i := 1
+READ num
+WHILE i<=10
+PRINT num*i
+INCREMENT i
+END WHILE
+
+Program:-
+import java.util.Scanner; 
+public class MultiplicationTable {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int i = 1;    
+        int num;             
+        System.out.print("Enter a number: ");
+        num = scanner.nextInt(); 
+        while (i <= 10) {
+            System.out.println(num * i); 
+            i++;                         
+        }        
+        scanner.close(); 
+    }
+}
+
+3)FOR
+
+Pseudocode:-
+FOR i:-1 to 10
+PRINT i
+END FOR
+
+Program:-
+public class ForLoopExample {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i); 
+        }
+    }
+}
+
+QUES:-
+
+Pseudocode:-
+INTEGER p,q,r
+SET q=13
+FOR(EACH p FROM 1 TO 4)
+r=q MOD p
+p=p+5
+q=p+r
+END FOR
+r=q/5
+PRINT q,5
+
+Program:-
+public class TraceChallenge {
+    public static void main(String[] args) {
+        int p, q, r;
+        q = 13;
+        for (p = 1; p <= 4; p++) {
+            r = q % p;     
+            p = p + 5;     
+            q = p + r;     
+        }
+        double finalR = (double) q / 5; 
+        System.out.println(q + ", " + 5);
+    }
+}
+
+QUES:-
+
+SUM OF SERIES:-
+1) 1+2+3+_______n
+
+Pseudocode:-
+DECLARE num : INTEGER
+DECLARE sum : INTEGER
+SET sum :=0
+READ num
+FOR i=1 TO num
+SUM:=SUM+1
+END FOR
+PRINT SUM
+
+Program:-
+import java.util.Scanner;
+
+public class SumLoop {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);      
+        int num;
+        int sum = 0; 
+        System.out.print("Enter a number: ");
+        num = scanner.nextInt(); 
+        for (int i = 1; i <= num; i++) {
+            sum = sum + 1; 
+        }       
+        System.out.println(sum); 
+        scanner.close();
+    }
+}
+
+OUTPUT- Enter a number: 5
+5
+
+
+QUES:-
+
+SUM OF SERIES:-
+2) 1+4+9+_______n^2
+
+Pseudocode:-
+DECLARE num : INTEGER
+DECLARE sum : INTEGER
+SET sum :=0
+READ num
+FOR i=1 TO num
+SUM:=SUM+1*1
+END FOR
+PRINT SUM
+
+Program:-
+import java.util.Scanner;
+public class LoopMultiplier {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);   
+        int num;
+        int sum = 0;        
+        System.out.print("Enter limit: ");
+        num = scanner.nextInt(); 
+        for (int i = 1; i <= num; i++) {
+            sum += 1 * 1; 
+        }        
+        System.out.println("Result: " + sum);
+        scanner.close();
+    }
+}
+
+OUTPUT- Enter limit: 6
+Result: 6
+
+QUES:-
+
+SUM OF SERIES:-
+3) 1+1/2+1/3+1/4+______1/n
+
+Pseudocode:-
+DECLARE n, i : INTEGER
+DECLARE sum : REAL
+SET sum := 0
+OUTPUT "Enter the value of n:"
+INPUT n
+FOR i FROM 1 TO n
+SET sum := sum + (1 / i)
+NEXT i
+OUTPUT "The harmonic sum is: ", sum
+
+Program:-
+import java.util.Scanner;
+
+public class HarmonicSeries {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);      
+        System.out.print("Enter the value of n: ");
+        int n = scanner.nextInt();        
+        double sum = 0.0; 
+        for (int i = 1; i <= n; i++) {
+            sum = sum + (1.0 / i);
+        }
+        System.out.println("The sum of the series is: " + sum);
+        scanner.close();
+    }
+}
+
+OUTPUT- Enter the value of n: 1
+The sum of the series is: 1.0
+
+SUM OF SERIES:-
+4) 1+1/4+1/9+______1/n^2
+
+Pseudocode:-
+DECLARE n, i : INTEGER
+DECLARE sum : REAL
+SET sum := 0
+OUTPUT "Enter the number of terms (n):"
+INPUT n
+FOR i FROM 1 TO n
+    SET sum := sum + (1 / (i * i))
+NEXT i
+OUTPUT "The sum of the series is: ", sum
+
+Program:-
+import java.util.Scanner;
+public class SumOfSquaresSeries {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);        
+        System.out.print("Enter the value of n: ");
+        int n = scanner.nextInt();        
+        double sum = 0.0;
+        for (int i = 1; i <= n; i++) {
+            sum = sum + (1.0 / (i * i));
+        }
+        System.out.println("The sum of the series is: " + sum);       
+        scanner.close();
+    }
+}
+
+OUTPUT- Enter the value of n: 5
+The sum of the series is: 1.4636111111111112
+
+QUES:-
+
+Pseudocode:-
+INTEGER x,y
+FOR (EACH x FROM 1 TO 11)
+x = x+2
+END FOR
+PRINT x
+
+Program:-
+public class LoopJump {
+    public static void main(String[] args) {
+        int x;
+        for (x = 1; x <= 11; x++) {
+            x = x + 2; // Manual jump
+        }
+        System.out.println(x); 
+    }
+}
+
+OUTPUT- 13
+
+FACTORIAL
+
+QUES:-
+
+Pseudocode:-
+INTEGER i, num, fact
+READ num
+SET fact :=1
+FOR i:=num TO STEP-1
+FACT :=fact*i
+END FOR
+PRINT fact
+
+Program:-
+import java.util.Scanner;
+public class Factorial {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int num, fact = 1; 
+        System.out.print("Enter a number: ");
+        num = scanner.nextInt(); 
+        for (int i = num; i >= 1; i--) {
+            fact = fact * i; 
+        }        
+        System.out.println("Factorial is: " + fact);
+        scanner.close();
+    }
+}
+
+OUTPUT- Enter a number: 5
+Factorial is: 120
+
+USING WHILE LOOP
+
+QUES:-
+
+Pseudocode:-
+INTEGER i, num, fact
+READ Num
+SET fact:=1
+WHILE i>0
+Fact: = fact* i
+DECREMENT i
+END WHILE
+PRINT Fact
+
+Program:-
+import java.util.Scanner;
+public class FactorialWhile {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);        
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();       
+        long fact = 1; 
+        int i = num;  
+        while (i > 0) {
+            fact = fact * i; 
+            i--;             
+        }       
+        System.out.println("Factorial: " + fact);
+        sc.close();
+    }
+}
+
+OUTPUT- Enter a number: 5
+Factorial: 120
+
+REVERSE:-
+
+PALINDROME:
+
+Pseudocode:-
+DECIARE num: INTEGER
+DECIARE a: INTEGER
+DECLARE d: INTEGER
+SET b:=0
+READ num
+WHILE num>0
+a := num MOD 10
+b := b+a
+num := num/10
+END WHILE
+PRINT b
+
+Program:-
+import java.util.Scanner;
+public class SumDigits {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);       
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();        
+        int b = 0; 
+        int a;            
+        while (num > 0) {
+            a = num % 10;  
+            b = b + a;   
+            num = num / 10;
+        }       
+        System.out.println("The sum of digits is: " + b);
+        sc.close();
+    }
+}
+
+OUTPUT- Enter a number: 6
+The sum of digits is: 6
+
+// Declaration of 1D Array
+Declare a : ARRAY[5] of INTEGER
+Declare b : ARRAY[10] of REAL
+Declare name : ARRAY[5] of STRING
+
+// Example:
+Declare a : ARRAY[0:4] of INTEGER
+FOR i := 0 to 4
+    READ a[i]
+END FOR
+
+FOR i := 0 to 4
+    PRINT a[i]
+END FOR
+
+// Example: Sum of Array Elements
+// a[0] = 10, a[1] = 20, a[2] = 30, a[3] = 40
+Declare a : ARRAY[0:4] of INTEGER
+Declare b : INTEGER
+Set b = 0
+FOR i := 0 to 4
+    READ a[i]
+    b = b + a[i]
+END FOR
+PRINT b
+
+// (OR) Alternative Sum Logic
+Declare a : ARRAY[5] of INTEGER
+Declare sum : INTEGER
+Set sum := 0
+FOR i := 0 to 4
+    READ a[i]
+END FOR
+FOR i := 0 to 4
+    sum := sum + a[i]
+END FOR
+PRINT sum
+
+// Creating a procedure
+PROCEDURE name_of_procedure (arguments)
+    // Statement
+END PROCEDURE
+
+// How to call procedure
+CALL name_of_procedure (arguments)
+
+// Example Procedure
+PROCEDURE pn()
+    PRINT "Ashish"
+END PROCEDURE
+CALL pn()
+
+// Alternative way to call procedure
+PROCEDURE pn()
+    DECLARE n : STRING
+    READ n
+    PRINT n
+END PROCEDURE
+CALL pn()
+
+// OR
+PROCEDURE pn(n : STRING)
+    PRINT n
+END PROCEDURE
+CALL pn("Ashish")
+
+// Example 1: Add numbers
+PROCEDURE add (a : INTEGER, b : INTEGER)
+    PRINT a + b
+END PROCEDURE
+CALL add(12, 3)
+
+// Example 2: Cube
+PROCEDURE cube (n : INTEGER)
+    PRINT n * n * n
+END PROCEDURE
+CALL cube(7)
+
+// Example 3: Area
+PROCEDURE area_of_c (h : INTEGER, b : INTEGER)
+    PRINT 0.5 * h * b
+END PROCEDURE
+CALL area(4, 5)
+
+// Find max of two
+PROCEDURE max (a : INTEGER, b : INTEGER)
+    IF a > b THEN
+        PRINT a
+    END IF
+END PROCEDURE
+
+// Basic Function
+FUNCTION test()
+    RETURN 0
+END FUNCTION
+
+// Example 1: Add
+FUNCTION add (a : INTEGER, b : INTEGER) : INTEGER
+    RETURN a + b
+END FUNCTION
+PRINT add(2, 3)
+
+// Example 2: Area of Circle
+FUNCTION aoc (rad : REAL) : REAL
+    RETURN 3.14 * rad * rad
+END FUNCTION
+PRINT aoc(6.6)
+
+// Example 3: Area of Triangle
+FUNCTION aot (base : REAL, height : REAL) : REAL
+    RETURN 0.5 * base * height // (Completed logic)
+END FUNCTION
+
+// Find Maximum in Array
+Declare a : ARRAY[5] of INTEGER
+Declare max : INTEGER
+FOR i := 0 to 4
+    READ a[i]
+END FOR
+Set max := a[0]
+FOR i := 0 to 4
+    IF a[i] > max THEN
+        max := a[i]
+    END IF
+END FOR
+PRINT max
+
+// Find Minimum in Array
+Declare a : ARRAY[10] of INTEGER
+Declare min : INTEGER
+FOR i := 0 to 9
+    READ a[i]
+END FOR
+Set min := a[0]
+FOR i := 0 to 9
+    IF a[i] < min THEN
+        min := a[i]
+    END IF
+END FOR
+PRINT min
